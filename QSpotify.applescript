@@ -1,7 +1,7 @@
 tell application "QLab"
 	tell front workspace
 		set cueOrigName to q name of last item of (active cues as list)
-		set q name of cue "SPOTVERS" to "QSpotify v0.5 by Alec Sparks, alecsparks.com"
+		set q name of cue "SPOTVERS" to "QSpotify v0.5.1 by Alec Sparks, alecsparks.com"
 	end tell
 	
 	
@@ -35,19 +35,23 @@ tell application "QLab"
 			tell application "Spotify" to set sound volume to 0
 		else if (((characters 1 thru 12 of cueFunction) as string) is "spotify:user") or (((characters 1 thru 13 of cueFunction) as string) is "spotify:track") or (((characters 1 thru 13 of cueFunction) as string) is "spotify:album") then
 			set trackName to first item of cueNameParts
-			set inFade to 0
 			set inTime to 0
+			set inContext to ""
 			
 			if (count of cueNameParts) is 2 then
 				set inTime to second item of cueNameParts
 			else if (count of cueNameParts) is 3 then
 				set inTime to second item of cueNameParts
-				set inFade to last item of cueNameParts
+				set inContext to last item of cueNameParts
 			end if
 			
 			tell application "Spotify"
 				set sound volume to 0
-				play track trackName
+				if (count of cueNameParts) is 3 then
+					play track trackName in context inContext
+				else
+					play track trackName
+				end if
 				repeat while (player position > 1 or player position is 0)
 					delay 0.1
 				end repeat

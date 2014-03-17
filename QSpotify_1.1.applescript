@@ -1,7 +1,7 @@
 tell application "QLab"
 	tell front workspace
 		set cueOrigName to q name of last item of (active cues as list)
-		set q name of cue "SPOTVERS" to "QSpotify v0.5.1 by Alec Sparks, alecsparks.com"
+		set q name of cue "SPOTVERS" to "QSpotify v1.1 by Alec Sparks, alecsparks.com"
 	end tell
 	
 	

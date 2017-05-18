@@ -10,7 +10,7 @@ Using QSpotify is very simple. Start by [downloading this repository](https://gi
 
 3- Navigate to the `Spotify Config` Cue List
 
-4- Change the Q Name of the `SPOTPATH` cue to reflect the path to the `QSpotify_1.1.scpt` fileon your computer. This .scpt file was included in the downloaded repository. This path should be colon-separated. EX: `Macintosh HD:Users:Me:Desktop:QSpotify:QSpotify_1.1.scpt`
+4- Change the Q Name of the `SPOTPATH` cue to reflect the path to the `QSpotify_1.1.scpt` file on your computer. This .scpt file was included in the downloaded repository. This path should be colon-separated. EX: `Macintosh HD:Users:Me:Desktop:QSpotify:QSpotify_1.1.scpt`
 
 
 A paid version of QLab is mostly necessary for QSpotify, becuase saved Script cues cannot be loaded with the free version.

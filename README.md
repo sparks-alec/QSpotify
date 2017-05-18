@@ -4,7 +4,7 @@
 
 Using QSpotify is very simple. Start by [downloading this repository](https://github.com/sparks-alec/QSpotify/archive/master.zip).
 
-1- Open `QSpotify Demo.cues`
+1- Open `QSpotify Demo.cues` in the downloaded folder
 
 2- Open QLab's Cue List pane by clicking the list icon in the bottom right corner of the main QLab window.
 

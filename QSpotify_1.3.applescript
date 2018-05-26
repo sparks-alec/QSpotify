@@ -46,6 +46,7 @@ tell application "QLab"
 			end if
 			
 			tell application "Spotify"
+				set v to sound volume
 				set sound volume to 0
 				if (count of cueNameParts) is 3 then
 					play track trackName in context inContext
@@ -56,7 +57,7 @@ tell application "QLab"
 					delay 0.2
 				end repeat
 				set player position to inTime --time in seconds
-				set sound volume to 100
+				set sound volume to v
 			end tell
 		else if (((characters 1 thru 13 of cueFunction) as string) is "spotify:pause") then
 			tell application "Spotify" to pause

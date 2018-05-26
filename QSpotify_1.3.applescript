@@ -1,7 +1,7 @@
 tell application "QLab"
 	tell front workspace
 		set cueOrigName to q name of last item of (active cues as list)
-		set q name of cue "SPOTVERS" to "QSpotify v1.2 by Alec Sparks, alecsparks.com"
+		set q name of cue "SPOTVERS" to "QSpotify v1.3 by Alec Sparks, alecsparks.com"
 	end tell
 	
 	
@@ -87,6 +87,7 @@ tell application "QLab"
 end tell
 
 on fadeInBackground(vol, inc, dly)
+	set dly to replace_chars(dly as string, ",", ".")
 	do shell script "osascript -e 'tell application \"Spotify\"' -e 'repeat with i from sound volume to " & vol & " by " & inc & "' -e 'if (sound volume - i is greater than 1) or (sound volume - i is less than -2) then exit repeat' -e 'set sound volume to i' -e 'delay " & dly & "' -e 'end repeat' -e 'end tell'&> /dev/null&"
 end fadeInBackground
 
@@ -98,3 +99,12 @@ on splitString(aString, delimiter)
 	set AppleScript's text item delimiters to prevDelimiter
 	return retVal
 end splitString
+
+on replace_chars(this_text, search_string, replacement_string)
+	set AppleScript's text item delimiters to the search_string
+	set the item_list to every text item of this_text
+	set AppleScript's text item delimiters to the replacement_string
+	set this_text to the item_list as string
+	set AppleScript's text item delimiters to ""
+	return this_text
+end replace_chars

@@ -12,11 +12,13 @@ Using QSpotify is very simple. Start by [downloading this repository](https://gi
 
 4- Change the Q Name of the `SPOTPATH` cue to reflect the path to the `QSpotify_1.3.scpt` file on your computer. This .scpt file was included in the downloaded repository. EX: `/Users/yourname/Downloads/QSpotify-master/QSpotify_1.3.scpt`
 
+
+## Troubleshooting
+
 If running a QSpotify cue returns an error such as `ERROR: A real number can't go after this identifier` or `ERROR: A "/" can't go here.`, there is likely a problem with the path to the QSpotify scpt file.
 
-
-
-
 A paid version of QLab is mostly necessary for QSpotify, becuase saved Script cues cannot be loaded with the free version.
+
+If multiple QLab workspaces are being used, the Script Cue script will need to be adjusted. Replace the script with `run script (q name of cue "SPOTPATH" in workspace "QSpotify Demo.qlab4" & "")`, replacing `QSpotify Demo` with the name of your QLab file.
 
 

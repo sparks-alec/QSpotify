@@ -2,7 +2,7 @@
 
 *Play Spotify tracks and playlists, as well as fades and loops, all from within QLab*
 
-Using QSpotify is fairly simple. Start by [downloading this repository](https://github.com/sparks-alec/QSpotify/archive/master.zip).
+Using QSpotify is fairly simple. Start by [downloading this repository](https://github.com/sparks-alec/QSpotify/archive/refs/heads/main.zip).
 
 1- Open `QSpotify Demo V5/QSpotify Demo V5.qlab5` in the downloaded folder
 

@@ -1,7 +1,6 @@
 tell application id "com.figure53.QLab.5"
 	tell front workspace
 		set cueOrigName to q name of last item of (active cues as list)
-		set q name of cue "SPOTVERS" to "QSpotify v1.4 by Alec Sparks, alecsparks.com"
 	end tell
 	
 	set cueName to (characters (offset of "spotify" in cueOrigName) thru -1 of cueOrigName) as string --trim off comments

@@ -10,7 +10,7 @@ Using QSpotify is fairly simple. Start by [downloading this repository](https://
 
 3- Navigate to the `Spotify Config` Cue List
 
-4- Change the Name of the `SPOTPATH` cue to reflect the path to the `QSpotify_1.4.scpt` file on your computer. This .scpt file was included in the downloaded repository. EX: `/Users/yourname/Downloads/QSpotify-main/QSpotify_1.4.scpt`
+4- Change the Name of the `SPOTPATH` cue to reflect the path to the `QSpotify.applescript` file on your computer. This .scpt file was included in the downloaded repository. EX: `/Users/yourname/Downloads/QSpotify-main/QSpotify.applescript`
 
 ## Getting Spotify URIs
 This used to be easier. Now you must hold <kbd>⌥ Option</kbd> after clicking the <kbd>...</kbd> share button to turn the `Copy Song Link` menu into a `Copy Song URI` menu.
